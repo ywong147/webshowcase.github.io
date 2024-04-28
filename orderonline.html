@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ac551731c5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/mainstyle.css">
+    <link rel="stylesheet" href="style/orderstyle.css">
+    <title>Yuri Restaurant</title>
+</head>
+<body>
+    <div class="TopBackground">
+        <a href="index.html">
+            <img src="images/yurilogo.png" alt="" style="margin: 2%;width: 100%; margin-left: 15%;">
+        </a>
+        <div class="MenuBar">
+            <h1 class="MenuBarLink"><a href="menu.html">Menu</a></h1>
+            <h1 class="MenuBarLink"><a href="event.html">Events & Promotions</a></h1>
+            <h1 class="MenuBarLink"><a href="Reservation.html">Reservation</a></h1>
+            <h1 class="SelectedLink"><a href="orderonline.html">Order Online</a></h1>
+        </div>
+    </div>
+    <h1 id="Steamed" style="height: 80px; line-height: 100px; text-align: center; margin-left: 12%; margin-right: 12%; margin-top: 0; margin-bottom: 0; background-color: #ffffe3;">Order Online</h1>
+    <div class="MenuSelection">
+        <h1><a href="#Steamed" class="MenuSelectionLink">Steamed</a></h1>
+        <h1><a href="#Baked" class="MenuSelectionLink">Baked</a></h1>
+        <h1><a href="#Pan-Fried" class="MenuSelectionLink">Pan Fried</a></h1>
+        <h1><a href="#Deep-Fried" class="MenuSelectionLink">Deep Fried</a></h1>
+        <h1><a href="#Congee-Rice" class="MenuSelectionLink">Congee & Steamed Rice</a></h1>
+        <h1><a href="#Rice-Roll" class="MenuSelectionLink">Steamed Rice Roll</a></h1>
+        <h1><a href="#Poached" class="MenuSelectionLink">Poached</a></h1>
+        <h1><a href="#Dessert" class="MenuSelectionLink">Dessert</a></h1>
+    </div>
+    <div style="display: flex; flex-direction: column; margin-left: 12%; margin-right: 12%; background-color: #ffffe3;">
+        <!-- Steamed -->
+        <h2 style="height: 50px; line-height: 60px; text-align: center; margin-left: 12%; margin-right: 12%; margin-top: 0; margin-bottom: 0; background-color: #ffffe3;">Steamed</h2>
+        <div class="FoodList">
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p>Steamed Vegetable Dumplings</p>
+                    <p>$4.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Steamed-Vegetable-Dumplings-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Steamed-Vegetable-Dumplings-Input',4.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/vegetable-dumplings.jpg" alt="">
+            </div>
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p>Steamed Dumplings with Shrimp and Chives</p>
+                    <p>$5.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Steamed-Dumplings-with-Shrimp-and-Chives-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Steamed-Dumplings-with-Shrimp-and-Chives-Input',5.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/dumplings-with-shrimp-chives.jpg" alt="">
+            </div>
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p>Steamed Shrimp Dumplings (Har Gao)</p>
+                    <p>$6.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Steamed-Shrimp-Dumplings-(Har-Gao)-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Steamed-Shrimp-Dumplings-(Har-Gao)-Input',6.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/hargao.jpg" alt="">
+            </div>
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p>Steamed Pork Dumplings with Shrimp (Siu Mai)</p>
+                    <p>$4.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Steamed-Pork-Dumplings-with-Shrimp-(Siu-Mai)-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Steamed-Pork-Dumplings-with-Shrimp-(Siu-Mai)-Input',4.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/siumai.jpg" alt="">
+            </div>
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p class="ShortP">Steamed Egg Cake</p>
+                    <p>$3.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Steamed-Egg-Cake-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Steamed-Egg-Cake-Input',3.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/egg-cake.jpg" alt="">
+            </div>
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p>Steamed Beancurd Skin with Pork and Shrimp</p>
+                    <p>$7.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Steamed-Beancurd-Skin-with-Pork-and-Shrimp-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Steamed-Beancurd-Skin-with-Pork-and-Shrimp-Input',7.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/beancurd-skin.jpg" alt="">
+            </div>
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p>Steamed Pork Spare Ribs with Black Bean</p>
+                    <p>$5.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Steamed-Pork-Spare-Ribs-with-Black-Bean-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Steamed-Pork-Spare-Ribs-with-Black-Bean-Input',5.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/pork-ribs.jpg" alt="">
+            </div>
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p>Braised Chicken Feet with Abalone Sauce and Peanut</p>
+                    <p>$6.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Braised-Chicken-Feet-with-Abalone-Sauce-and-Peanut-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Braised-Chicken-Feet-with-Abalone-Sauce-and-Peanut-Input',6.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/chicken-feet.jpg" alt="">
+            </div>
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p>Pork Dumplings in Spicy Sauce (Wonton)</p>
+                    <p>$5.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Pork-Dumplings-in-Spicy-Sauce-(Wonton)-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Pork-Dumplings-in-Spicy-Sauce-(Wonton)-Input',5.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/wonton.jpg" alt="">
+            </div>
+            <div id="Baked"  class="Food">
+                <div class="FoodDescription">
+                    <p>Steamed Beef Balls with Bean Curd Skin</p>
+                    <p>$4.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Steamed-Beef-Balls-with-Bean-Curd-Skin-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Steamed-Beef-Balls-with-Bean-Curd-Skin-Input',4.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/beef-balls.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Baked -->
+        <h2 style="height: 50px; line-height: 60px; text-align: center; margin-left: 12%; margin-right: 12%; margin-top: 0; margin-bottom: 0; background-color: #ffffe3;">Baked</h2>
+        <div class="FoodList">
+            <div id="Pan-Fried" class="Food">
+                <div class="FoodDescription">
+                    <p>Baked BBQ Pork Buns (3pieces)</p>
+                    <p>$5.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Baked-BBQ-Pork-Buns-(3pieces)-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Baked-BBQ-Pork-Buns-(3pieces)-Input',5.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/pork-buns.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Pan Fried -->
+        <h2 style="height: 50px; line-height: 60px; text-align: center; margin-left: 12%; margin-right: 12%; margin-top: 0; margin-bottom: 0; background-color: #ffffe3;">Pan Fried</h2>
+        <div class="FoodList">
+            <div id="Deep-Fried" class="Food">
+                <div class="FoodDescription">
+                    <p>Pan Fried Turnip Cake</p>
+                    <p>$4.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Pan-Fried-Turnip-Cake-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Pan-Fried-Turnip-Cake-Input',4.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/turnip-cake.jpg" alt="">
+            </div>
+        </div>
+       
+        <!-- Deep Fried -->
+        <h2 style="height: 50px; line-height: 60px; text-align: center; margin-left: 12%; margin-right: 12%; margin-top: 0; margin-bottom: 0; background-color: #ffffe3;">Deep Fried</h2>
+        <div class="FoodList">
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p>Beancurd Skin with Shrimp</p>
+                    <p>$6.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Beancurd-Skin-with-Shrimp-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Beancurd-Skin-with-Shrimp-Input',6.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/beancurd-skin-shrimp.jpg" alt="">
+            </div>
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p>Deep Fried Vegetable Spring Roll (Lo Han Jai)</p>
+                    <p>$5.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Deep-Fried-Vegetable-Spring-Roll-(Lo-Han-Jai)-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Deep-Fried-Vegetable-Spring-Roll-(Lo-Han-Jai)-Input',5.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/spring-roll.jpg" alt="">
+            </div>
+            <div id="Congee-Rice" class="Food">
+                <div class="FoodDescription">
+                    <p>Deep Fried Eggplant with Shrimp</p>
+                    <p>$4.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Deep-Fried-Eggplant-with-Shrimp-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Deep-Fried-Eggplant-with-Shrimp-Input',4.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/eggplant.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Congee & Steamed Rice -->
+        <h2 style="height: 50px; line-height: 60px; text-align: center; margin-left: 12%; margin-right: 12%; margin-top: 0; margin-bottom: 0; background-color: #ffffe3;">Congee & Steamed Rice</h2>
+        <div class="FoodList">
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p>Pork Congee with Century and Salted Egg</p>
+                    <p>$5.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Pork-Congee-with-Century-and-Salted-Egg-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Pork-Congee-with-Century-and-Salted-Egg-Input',5.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/pork-congee.jpg" alt="">
+            </div>
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p>Steamed Rice with Pork Spare Ribs</p>
+                    <p>$5.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Steamed-Rice-with-Pork-Spare-Ribs-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Steamed-Rice-with-Pork-Spare-Ribs-Input',5.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/rice-with-pork-ribs.jpg" alt="">
+            </div>
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p>Steamed Rice with Ginger Chicken</p>
+                    <p>$5.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Steamed-Rice-with-Ginger-Chicken-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Steamed-Rice-with-Ginger-Chicken-Input',5.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/rice-with-chicken.jpg" alt="">
+            </div>
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p>Steamed Rice with Minced Beef and Pan Fried Egg</p>
+                    <p>$5.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Steamed-Rice-with-Minced-Beef-and-Pan-Fried-Egg-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Steamed-Rice-with-Minced-Beef-and-Pan-Fried-Egg-Input',5.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/rice-with-beef-egg.jpg" alt="">
+            </div>
+            <div id="Rice-Roll" class="Food">
+                <div class="FoodDescription">
+                    <p>Sticky Rice in Lotus Leaf</p>
+                    <p>$6.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Sticky-Rice-in-Lotus-Leaf-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Sticky-Rice-in-Lotus-Leaf-Input',6.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/sticky-rice.jpg" alt="">
+            </div>
+        </div>
+
+
+        <!-- Steamed Rice Roll -->
+        <h2 style="height: 50px; line-height: 60px; text-align: center; margin-left: 12%; margin-right: 12%; margin-top: 0; margin-bottom: 0; background-color: #ffffe3;">Steamed Rice Roll</h2>
+        <div class="FoodList">
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p>Steamed Rice Roll with BBQ Pork</p>
+                    <p>$4.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Steamed-Rice-Roll-with-BBQ-Pork-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Steamed-Rice-Roll-with-BBQ-Pork-Input',4.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/rice-roll-with-pork.jpg" alt="">
+            </div>
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p>Steamed Rice Roll with Shrimp and Chinese Chives</p>
+                    <p>$5.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Steamed-Rice-Roll-with-Shrimp-and-Chinese-Chives-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Steamed-Rice-Roll-with-Shrimp-and-Chinese-Chives-Input',5.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/rice-roll-with-shrimp.jpg" alt="">
+            </div>
+            <div id="Poached" class="Food">
+                <div class="FoodDescription">
+                    <p>Steamed Rice Roll with Minced Beef</p>
+                    <p>$4.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Steamed-Rice-Roll-with-Minced-Beef-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Steamed-Rice-Roll-with-Minced-Beef-Input',4.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/rice-roll-with-beef.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Poached -->
+        <h2 style="height: 50px; line-height: 60px; text-align: center; margin-left: 12%; margin-right: 12%; margin-top: 0; margin-bottom: 0; background-color: #ffffe3;">Poached</h2>
+        <div class="FoodList">
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p>Poached Fresh Lettuce</p>
+                    <p>$4.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Poached-Fresh-Lettuce-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Poached-Fresh-Lettuce-Input',4.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/lettuce.jpg" alt="">
+            </div>
+            <div id="Dessert" class="Food">
+                <div class="FoodDescription">
+                    <p>Poached Fresh Seasonal Greens</p>
+                    <p>$4.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Poached-Fresh-Seasonal-Greens-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Poached-Fresh-Seasonal-Greens-Input',4.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/seasonal-greens.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Dessert -->
+        <h2 style="height: 50px; line-height: 60px; text-align: center; margin-left: 12%; margin-right: 12%; margin-top: 0; margin-bottom: 0; background-color: #ffffe3;">Dessert</h2>
+        <div class="FoodList">
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p>Sweet Osmanthus Jelly with Goji Berries</p>
+                    <p>$4.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Sweet-Osmanthus-Jelly-with-Goji-Berries-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Sweet-Osmanthus-Jelly-with-Goji-Berries-Input',4.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/osmanthus-jelly.jpg" alt="">
+            </div>
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p class="ShortP">Deep Fried Milk</p>
+                    <p>$4.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Deep-Fried-Milk-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Deep-Fried-Milk-Input',4.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/milk.jpg" alt="">
+            </div>
+            <div class="Food">
+                <div class="FoodDescription">
+                    <p class="ShortP">Coconut Sago (cold)</p>
+                    <p>$4.99 each</p>
+                    <div class="QuantityInput">
+                        <input id="Coconut-Sago-(cold)-Input" name="Quantityinputfield" type="number" min="0" max="99" placeholder="Qty" style="margin-right: 2%;">
+                        <button class="AddtoCart" style="width: 82px;" onclick="addItem('Coconut-Sago-(cold)-Input',4.99)">Add to Cart</button>
+                    </div>
+                </div>
+                <img src="images/food/coconut-sago.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <i class="fas fa-shopping-cart ShoppingCart" onclick="openCart();"></i>
+    <i class="ItemCounter" id="ItemCounter"></i>
+    <div class="CartForm" id="CartForm">
+        <span class="close" onclick="closeCart()">&times;</span>
+        <h2>Your Shopping Cart</h2>
+        <br>
+        <div class="ItemList">
+
+            <p id="empty"></p>
+            <p id="Steamed-Vegetable-Dumplings"></p>
+            <p id="Steamed-Dumplings-with-Shrimp-and-Chives"></p>
+            <p id="Steamed-Shrimp-Dumplings-(Har-Gao)"></p>
+            <p id="Steamed-Pork-Dumplings-with-Shrimp-(Siu-Mai)"></p>
+            <p id="Steamed-Egg-Cake"></p>
+            <p id="Steamed-Beancurd-Skin-with-Pork-and-Shrimp"></p>
+            <p id="Steamed-Pork-Spare-Ribs-with-Black-Bean"></p>
+            <p id="Braised-Chicken-Feet-with-Abalone-Sauce-and-Peanut"></p>
+            <p id="Pork-Dumplings-in-Spicy-Sauce-(Wonton)"></p>
+            <p id="Steamed-Beef-Balls-with-Bean-Curd-Skin"></p>
+            <p id="Baked-BBQ-Pork-Buns-(3pieces)"></p>
+            <p id="Pan-Fried-Turnip-Cake"></p>
+            <p id="Beancurd-Skin-with-Shrimp"></p>
+            <p id="Deep-Fried-Vegetable-Spring-Roll-(Lo-Han-Jai)"></p>
+            <p id="Deep-Fried-Eggplant-with-Shrimp"></p>
+            <p id="Pork-Congee-with-Century-and-Salted-Egg"></p>
+            <p id="Steamed-Rice-with-Pork-Spare-Ribs"></p>
+            <p id="Steamed-Rice-with-Ginger-Chicken"></p>
+            <p id="Steamed-Rice-with-Minced-Beef-and-Pan-Fried-Egg"></p>
+            <p id="Sticky-Rice-in-Lotus-Leaf"></p>
+            <p id="Steamed-Rice-Roll-with-BBQ-Pork"></p>
+            <p id="Steamed-Rice-Roll-with-Shrimp-and-Chinese-Chives"></p>
+            <p id="Steamed-Rice-Roll-with-Minced-Beef"></p>
+            <p id="Poached-Fresh-Lettuce"></p>
+            <p id="Poached-Fresh-Seasonal-Greens"></p>
+            <p id="Sweet-Osmanthus-Jelly-with-Goji-Berries"></p>
+            <p id="Deep-Fried-Milk"></p>
+            <p id="Coconut-Sago-(cold)"></p>
+        </div>
+        <br>
+        <br>
+        <p id="total"></p>
+        <br>
+        <button type="submit" class="Checkout">Checkout</button>
+    </div>
+    
+    <div class="footer" style="margin-top: 0;">
+        <div style="display: flex; flex-direction: column;">
+            <span style="font-weight: bolder;">Follow us on:</span>
+            <div class="Social">
+                <a href="https://www.facebook.com/" target="_blank" class="footerIcon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="footerIcon"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank" class="footerIcon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div>
+            <p><span style="font-weight: bolder;">Yuri Restaurant</span><br>475 Granville St,<br>Vancouver, BC V6C 1T1</p>
+        </div>
+        <div>
+            <p><span style="font-weight: bolder;">Opening Hours</span><br>Mon-Sun<br>11:00am - 9:00pm</p>
+        </div>
+        <div>
+            <p><span style="font-weight: bolder;">Contact</span><br>(604) 558-8727<br>yatyu.wong@itdcanada.ca</p>
+        </div>
+    </div>
+    <script src="script/orderscript.js"></script>
+</body>
+</html>

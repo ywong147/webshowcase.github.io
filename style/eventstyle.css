@@ -1,0 +1,69 @@
+.EventList{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+}
+
+.Event{
+    width: 300px;
+    margin: 2.5%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.Event:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.TextOverlay{
+    width: 100%;
+    margin: 8px;
+}
+
+.EventEnlargedBackground{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 900;
+    background-color: black;
+    opacity: 0.7;
+    overflow: auto;
+}
+
+.EventLargePic {
+    display: none;
+    padding: 10px;
+    z-index: 1000;
+    align-items: center;
+    margin-left: 33%;
+    position: fixed; 
+    top: 0;
+    width: 34%;
+    opacity: 1;
+    border-radius: 0px;
+}
+
+.close {
+    color: #aaaaaa;
+    position: fixed;
+    right: 10%;
+    top: 10%;
+    font-size:3em;
+    z-index: 1100;
+}
+
+.close:hover, .close:focus {
+    color: #cbcbcb;
+    text-decoration: none;
+    cursor: pointer;
+}

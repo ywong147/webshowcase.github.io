@@ -1,0 +1,60 @@
+.ReservationBackground{
+    width: 100%;
+    background-image: url('../images/reservation.jpg');
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.BookingForm{
+    max-width:700px;
+    width:100%;
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgb(80, 80, 80);
+    background-color: #ffffe3;
+    border: 2px solid grey;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    text-transform:uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FillingForm{
+    display: flex; 
+    flex-flow: row wrap; 
+    font-family: 'News Cycle', sans-serif;
+}
+
+@media (max-width: 680px) {
+    .FillingForm{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+input,select{
+    height: 25px;
+}
+
+.SubmitBtn{
+    color: white;
+    background-color:brown;
+    font-weight:700;
+    height:50px;
+    width:84.5%;
+    margin-top: 20px;
+    border:none;
+    border-radius:3px;
+    text-transform:uppercase
+}
+
+.SubmitBtn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    background-color:rgb(139, 36, 36);
+}

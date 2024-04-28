@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'Athiti';
+    src: url(../fonts/Athiti/Athiti-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url(../fonts/Bai_Jamjuree/BaiJamjuree-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'News Cycle';
+    src: url(../fonts/News_Cycle/NewsCycle-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+p,span, i{
+    font-family: 'Athiti', sans-serif;
+}
+h1,h2{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg,transparent 34%, #ffebd3 35%, #ffebd3 40%, transparent 41%, transparent 59%, #ffebd3  60%, #ffebd3 65%, transparent 66%),linear-gradient(135deg,transparent 34%, #ffebd3 35%, #ffebd3 40%, transparent 41%, transparent 59%, #ffebd3  60%, #ffebd3 65%, transparent 66%);
+    background-size: 2em 2em;
+    background-color: #ffffe3;
+    opacity: 1
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 219);
+}
+
+.TopBackground{
+    width: 100%;
+    background-image: url('../images/background.png');
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.MenuBar{
+    margin-top: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.MenuBarLink{
+    line-height: 100%;
+    font-size: 2vw;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* font-weight: bolder; */
+    text-shadow: 0px 5px 10px rgb(102, 102, 94);
+    color: rgb(255, 255, 219);
+}
+
+.MenuBarLink:hover{
+    text-shadow: 0px 5px 10px rgb(102, 102, 94);
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+.SelectedLink{
+    line-height: 100%;
+    font-size: 2vw;
+    display: flex;
+    text-decoration: underline;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 0px 5px 10px rgb(102, 102, 94);
+    color: whitesmoke;
+    /* font-weight: bolder; */
+}
+
+.homeBackground{
+    width: 100%;
+    background-image: url('../images/dimsum.jpg');
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.IntroBackground{
+    display: flex; 
+    flex-flow: column; 
+    padding: 1%;
+    margin-top: 5vh; 
+    background-image: url('../images/chef.png');
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: center;
+}
+
+.IntroText{
+    font-size: 1.5em; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+    .IntroText{
+        font-size: 1em; 
+        flex-direction: column;
+    }
+}
+
+.PromoDiv{
+    display: flex; 
+    flex-direction: row; 
+    height: 250px; 
+    margin: 5%; 
+    justify-content: space-evenly;
+}
+
+@media (max-width: 500px) {
+    .PromoDiv{
+        height: 800px; 
+        flex-direction: column;
+    }
+}
+
+.EventButton{
+    margin: 0;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #ffffe3;
+    border: 2px solid brown;
+    color: brown;
+    /* font-weight: bolder; */
+    text-shadow: 0px 0px 0px black;
+    text-align: center;
+}
+
+.EventButton:hover{
+    background-color: brown;
+    color: #ffffe3;
+}
+
+.Promo{
+    border-radius: 5%;
+    height: 250px;
+}
+
+.Promo:hover{
+    transform: scale(1.2);
+}
+
+.MenuBackground{
+    display: flex; 
+    flex-flow: row-reverse; 
+    margin-top: 5vh; 
+    background-image: url('../images/xiaolongbao.jpg');
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.MenuTextContainer{
+    width: 300px;
+    background-color: rgba(245, 245, 245, 0.764);
+    margin-right: 10%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+    align-items: center;
+}
+
+.MenuText{
+    padding: 20px;
+    width: 90%;
+    height: 90%;
+    font-size: 1.2em; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center; 
+    align-items: center;
+    border: 4px double;
+}
+
+.MenuButton{
+    margin: 0;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 10px;
+    background-color: brown;
+    /* font-weight: bolder; */
+    text-shadow: 0px 0px 0px black;
+}
+
+.MenuButton:hover{
+    background-color: rgb(97, 25, 25);
+}
+
+.DirectionButton{
+    margin: 0;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #ffffe3;
+    border: 2px solid rgb(0, 119, 255);
+    color: rgb(0, 119, 255);
+    /* font-weight: bolder; */
+    text-shadow: 0px 0px 0px black;
+    text-align: center;
+}
+
+.DirectionButton:hover{
+    background-color: rgb(0, 119, 255);
+    color: #ffffe3;
+}
+
+.footer{
+    margin-top: 15px;
+    height: 120px;
+    background-color: rgb(248, 205, 144);
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .footer{
+        flex-direction: column;
+        height: 350px;
+        align-items: baseline;
+    }
+}
+
+.Social{
+    display: flex;
+    flex-flow: row;
+}
+
+.footerIcon{
+    margin-left: 0.3vw;
+    margin-right: 0.3vw;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    background-color: brown;
+    color: ivory;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerIcon:hover{
+    background-color: lightcoral;
+    color: black;
+}

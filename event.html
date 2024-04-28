@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ac551731c5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/mainstyle.css">
+    <link rel="stylesheet" href="style/eventstyle.css">
+    <title>Yuri Restaurant</title>
+</head>
+<body>
+    <div class="TopBackground">
+        <a href="index.html">
+            <img src="images/yurilogo.png" alt="" style="margin: 2%; margin-left: 15%;">
+        </a>
+        <div class="MenuBar">
+            <h1 class="MenuBarLink"><a href="menu.html">Menu</a></h1>
+            <h1 class="SelectedLink"><a href="event.html">Events & Promotions</a></h1>
+            <h1 class="MenuBarLink"><a href="Reservation.html">Reservation</a></h1>
+            <h1 class="MenuBarLink"><a href="orderonline.html">Order Online</a></h1>
+        </div>
+    </div>
+    <h1 style="text-align: center;">Events & Promotions</h1>
+    <div class="EventList">
+        <div class="Event">
+            <img src="images/promo1.jpg" style="width: 300px;" onclick="openPromo('Promo1Pic')" alt="">
+            <p class="TextOverlay">Yuri Restaurant 10TH ANNIVERSARY</p>
+        </div>
+        <div class="Event">
+            <img src="images/promo2.jpg" style="width: 300px;" onclick="openPromo('Promo2Pic')" alt="">
+            <p class="TextOverlay">HONG KONG EGG TARTS<br>Bigger in size, better in taste</p>
+        </div>
+    </div>
+    <div class="EventEnlargedBackground" id="EventEnlargedBackground">
+        <span class="close" onclick="closePromo()">&times;</span>
+    </div>
+    <img src="images/promo1.jpg" alt="" id="Promo1Pic" class="EventLargePic">
+    <img src="images/promo2.jpg" alt="" id="Promo2Pic" class="EventLargePic">
+    <div class="footer">
+        <div style="display: flex; flex-direction: column;">
+            <span style="font-weight: bolder;">Follow us on:</span>
+            <div class="Social">
+                <a href="https://www.facebook.com/" target="_blank" class="footerIcon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="footerIcon"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank" class="footerIcon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div>
+            <p><span style="font-weight: bolder;">Yuri Restaurant</span><br>475 Granville St,<br>Vancouver, BC V6C 1T1</p>
+        </div>
+        <div>
+            <p><span style="font-weight: bolder;">Opening Hours</span><br>Mon-Sun<br>11:00am - 9:00pm</p>
+        </div>
+        <div>
+            <p><span style="font-weight: bolder;">Contact</span><br>(604) 558-8727<br>yatyu.wong@itdcanada.ca</p>
+        </div>
+    </div>
+    <script src="script/eventscript.js"></script>
+</body>
+</html>
